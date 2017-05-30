@@ -1,0 +1,35 @@
+<template name="item_1">
+  <navigator url="../day/day?day={{item}}">
+    <view class="item-body">
+      <image src="../../images/calendar.png" class="item-icon" mode="aspectFit"/>
+      <text class="item-name">第{{item}}天</text>
+      <image src="../../images/list_arrow.png" class="item-arrow" mode="aspectFit"/>
+    </view>
+  </navigator>
+</template>
+
+<template name="item_2">
+ <navigator url="../index/index">
+    <view class="item-body">
+      <image src="{{item.image}}" class="item-icon" mode="aspectFit"/>
+      <view class="item-content">
+      <text class="item-title">{{item.title}}</text>
+      <text class="item-subtitle">{{item.des}}
+      </text>
+       <text class="item-type">{{item.type==1?'早餐':item.type==2?'中餐':'晚餐'}}</text>
+      </view>
+      <image src="../../images/list_arrow.png" class="item-arrow" mode="aspectFit"/>
+    </view>
+  </navigator>
+</template>
+
+<template name="scroll-view">
+  <scroll-view scroll-y="true" class="scroll-body">
+    <block wx:for="{{listData}}">
+      <template is="{{itemView}}" data="{{item}}"></template> 
+    </block>
+  </scroll-view>
+   <loading hidden="{{!loading}}">
+    加载中...
+  </loading>
+</template>

@@ -1,0 +1,44 @@
+/* day.wxss */
+.item-body{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #eee
+}
+
+.item-icon{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 50rpx;
+}
+
+.item-content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-right: 30rpx
+}
+
+.item-title{
+  font-size: 35rpx;
+  margin-top: 30rpx;
+  color: #FE86A9;
+}
+.item-subtitle{
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical
+}
+.item-type{
+  font-size:30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  text-align: right
+}

@@ -1,0 +1,3 @@
+<!--daily.wxml-->
+<import src="../common/common.wxml" />
+<template is="scroll-view" data="{{listData,itemView}}"/>

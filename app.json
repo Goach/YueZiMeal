@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/daily/daily",
+    "pages/like/like",
+    "pages/logs/logs",
+    "pages/day/day"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FE86A9",
+    "navigationBarTitleText": "月子餐",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#FE86A9",
+    "color": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/daily/daily",
+        "text": "每日食谱",
+        "iconPath": "images/daily_menu_normal.png",
+        "selectedIconPath": "images/daily_menu_pressed.png"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "text": "我的最爱",
+        "iconPath": "images/my_favi_normal.png",
+        "selectedIconPath": "images/my_favi_pressed.png"
+      }
+    ]
+  }
+}
